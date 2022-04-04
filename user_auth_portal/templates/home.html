@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> {% block title %} home {% endblock %} </title> 
+	<h1  style=" text-align:center">Welcome to the  Portal</h1>
+</head>
+<body>
+	<div style="text-align: center;" class="site-container">	
+		<a href="{% url 'login' %}" >LOG_IN HERE</a><br><br>
+		<a href="{% url 'signup' %}">SIGN_UP HERE</a>
+	</div>
+</body>
+{% endblock %}
+</html>
